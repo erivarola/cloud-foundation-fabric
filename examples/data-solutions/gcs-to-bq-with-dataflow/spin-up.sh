@@ -2,7 +2,7 @@
 #Calculate project suffix based on context for uniqueness
 hash_acc=`gcloud config get-value account | sha256sum`
 hash_date=`date | sha256sum`
-project_suffix="${hash_acc:0:6}${hash_date:0:6}"
+project_suffix="${hash_acc:10:16}${hash_date:0:6}"
 
 #Define global variables
 ROOT_NODE='""'
