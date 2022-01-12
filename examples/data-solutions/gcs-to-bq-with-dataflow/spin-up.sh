@@ -5,8 +5,8 @@ hash_date=`date | sha256sum`
 project_suffix="${hash_acc:0:6}${hash_date:0:6}"
 
 #Define global variables
-ROOT_NODE='"folders/53638327743"'
-BILLING_ACCOUNT='"010968-EBE846-E927C8"'
+ROOT_NODE='""'
+BILLING_ACCOUNT='""'
 PROJECT_KMS_NAME='"kms-project-'${project_suffix}'"'
 PROJECT_SERVICE_NAME='"service-project-'${project_suffix}'"'
 VAR_FILENAME=testing
